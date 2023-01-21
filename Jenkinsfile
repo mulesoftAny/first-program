@@ -27,7 +27,7 @@ pipeline
     		env="${APP_ENV}"
     		name="${APP_NAME}"
     		user="${ANYPOINT_USER}"
-    		password=${ANYPOINT_PASSWORD}
+    		password="${ANYPOINT_PASSWORD}"
     	}
       steps 
       {
