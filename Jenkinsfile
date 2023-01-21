@@ -14,7 +14,7 @@ pipeline
     {
       steps 
       {
-            bat 'mvn clean deploy -DmuleDeploy'
+            bat 'mvn clean deploy  -Dworkers=1 -Danypoint.username=ayanshko -Danypoint.password=Inthu@1234 -Dapplication.name=gitprogram -Denv=Sandbox -Dmule.version=4.4.0 -DmuleDeploy'
       }
     }
   }

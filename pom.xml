@@ -31,17 +31,20 @@
 				<extensions>true</extensions>
 				<configuration>
 					<cloudHubDeployment>
-						<uri>https://anypoint.mulesoft.com</uri>
+				 	<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>${mule.version}</muleVersion>
-						<!-- Deploy user parameter -->
 						<username>${anypoint.username}</username>
 						<password>${anypoint.password}</password>
-						<!-- Environment parameters-->
 						<environment>${env}</environment>
 						<applicationName>${application.name}</applicationName>
-						<workerType>${vcore}</workerType>
+				<!--		<workerType>${vcore}</workerType> -->
 						<workers>${workers}</workers>
-						<objectStoreV2>true</objectStoreV2>
+						<objectStoreV2>true</objectStoreV2> 
+					<!-- 	<username>ayanshko</username>
+    				    <password>Inthu@1234</password>
+						<environment>Sandbox</environment>
+						<applicationName>gitprogram</applicationName>
+						<muleVersion>4.4.0</muleVersion> -->
 					</cloudHubDeployment>
 				</configuration>
 			</plugin>
