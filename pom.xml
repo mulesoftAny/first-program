@@ -29,15 +29,14 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
-			</plugin>
-			<configuration>
+				<configuration>
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>${mule.version}</muleVersion>
 						<!-- Deploy user parameter -->
 						<username>${anypoint.username}</username>
-    				    <password>${anypoint.password}</password>
-    				    <!-- Environment parameters-->
+						<password>${anypoint.password}</password>
+						<!-- Environment parameters-->
 						<environment>${env}</environment>
 						<applicationName>${application.name}</applicationName>
 						<workerType>${vcore}</workerType>
@@ -45,6 +44,7 @@
 						<objectStoreV2>true</objectStoreV2>
 					</cloudHubDeployment>
 				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 
