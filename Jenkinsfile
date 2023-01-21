@@ -7,7 +7,7 @@ pipeline
   	{
   	  steps
   	  {
-  	  	configFileProvider([configFile((fileId:"88a727b0-f288-46a8-a289-043e5b2bdffc",targetLocation: 'env.groovy',variable: 'ENV')])
+  	  	configFileProvider([configFile(fileId:"88a727b0-f288-46a8-a289-043e5b2bdffc",targetLocation: 'env.groovy',variable: 'ENV')])
   	  	{
   	  		load "env.groovy";
   	  	}
